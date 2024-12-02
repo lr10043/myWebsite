@@ -7,20 +7,85 @@
          min-width: 100%;
          min-height: 100%;
       }
+      
+ .bn29 {
+  border: none;
+  padding: 0.8em 2.5em;
+  outline: none;
+  color: white;
+  font-style: 1.2em;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  background: none;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.45);
+}
+
+.bn29:before,
+.bn29:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 10em;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 105%;
+  height: 105%;
+  content: "";
+  z-index: -2;
+  background-size: 400% 400%;
+  background: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
+}
+
+.bn29:before {
+  -webkit-filter: blur(7px);
+  filter: blur(7px);
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-animation: pulse 10s infinite ease;
+  animation: pulse 10s infinite ease;
+}
+
+.bn29:after {
+  -webkit-filter: blur(0.3px);
+  filter: blur(0.3px);
+}
+
+.bn29:hover:before {
+  width: 115%;
+  height: 115%;
+}     
+      
   </style>
 </head>
 
 <body>
 <h1>All about netball</h1>
 <h2>
-when was netball invented? 
+<img src="https://netball.sport/wp-content/uploads/2024/02/NZ-Malawi-FAST5-NWS-1600x800-1.jpg" width="500px">
+<br>when was netball invented? 
 </h2>
+<br>
 <h3>
 The history of netball can be traced to the early development of basketball. A year after basketball was invented in 1891, the sport was modified for women to accommodate social conventions regarding their participation in sport, giving rise to women's basketball. Variations of women's basketball arose across the United States and in England. At the Madame Österberg Physical Training College Dartford, England, the rules of women's basketball were modified over several years to form an entirely new sport: "net ball".[1] The sport was invented to encourage young females to be physically active and energetic. The first codified rules of netball were published at the start of the twentieth century, and from there the new sport spread throughout the British Empire.
-</h3>
+</h3><br><br>
+
+<a href="https://en.wikipedia.org/wiki/Netball"><button class="bn29">See more here!</button></a>
+
 
 
 
 </body>
 
+ 
 </html>
